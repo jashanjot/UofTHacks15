@@ -81,8 +81,8 @@ app.get("/test", function (req, res) {
 				console.log(input);
 				client.messages.create({
 							body: input + " error",
-							to: "+1 personal-number",
-							from: "+16476910582"
+							to: "[+1 personal-number]",
+							from: "[Twilio-Phone-Number]"
 					}, function(err, message) {
 						console.log(err);
 							//process.stdout.write(message.sid);
@@ -94,7 +94,7 @@ app.get("/test", function (req, res) {
 // client.messages.create({
 // 			body: input + " no error",
 // 			to: input,
-// 			from: "+16476910582"
+// 			from: "[Twilio-Phone-Number]"
 // 	}, function(err, message) {
 // 		console.log(err);
 // 		//process.stdout.write(err);
